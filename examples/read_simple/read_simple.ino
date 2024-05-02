@@ -2,7 +2,6 @@
  * @file read_simple.ino
  * @author Mechasolution Tech Support Team (techms5499@gmail.com)
  * @brief R finder 10D driver library
- * @version 0.1
  * @date 2024-05-02
  *
  * @copyright Copyright (c) 2024 Mechasolution (https://mechasolution.com)

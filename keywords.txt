@@ -13,6 +13,7 @@ Mecha_Rfinder10D						KEYWORD1
 init												KEYWORD2
 fetchNewData								KEYWORD2
 isNewData										KEYWORD2
+getTargetCnt								KEYWORD2
 getStrength									KEYWORD2
 getRange										KEYWORD2
 

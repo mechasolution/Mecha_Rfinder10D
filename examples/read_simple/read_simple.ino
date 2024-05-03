@@ -2,7 +2,7 @@
  * @file read_simple.ino
  * @author Mechasolution Tech Support Team (techms5499@gmail.com)
  * @brief R finder 10D driver library
- * @date 2024-05-02
+ * @date 2024-05-03
  *
  * @copyright Copyright (c) 2024 Mechasolution (https://mechasolution.com)
  *
@@ -35,9 +35,9 @@ void setup() {
 void loop() {
   rfinder.fetchNewData(); // Serial1의 데이터를 polling함으로, 항상 실행되어야 함.
 
-  if (rfinder.isNewData()) { // 마지막 get 메소드 사용 이후 새로운 데이터가 있다면,
+  if (rfinder.isNewData()) { // 마지막으로 .isNewData() 메소드 실행 후 새로운 데이터가 있다면,
     Serial.print("Strength : ");
-    Serial.print(rfinder.getStrength());
+    Serial.print(rfinder.getStrength()); // 인자값으로 아무것도 전달하지 않는 경우 가장 근처의 타겟으로 정해짐
     Serial.print("\t Range : ");
     Serial.println(rfinder.getRange());
   }
